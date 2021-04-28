@@ -12,7 +12,7 @@ body {
 header {
   position: relative;
   width: 100%;
-  min-height: 1200px;
+  min-height: 850px;
 }
 
 
@@ -188,6 +188,14 @@ background-color: rgba(0, 0, 0, .7);
   justify-content:center;
 }
 
+.Project{
+  font-size: 4.2rem;
+  line-height: 110%;
+  margin: 2.8rem 0 1.68rem 0;
+}
+.slider_title{
+  display:flex
+}
 
 .slider .slides li img {
   height: 100%;
@@ -208,7 +216,18 @@ background-color: rgba(0, 0, 0, .7);
 
 .slider .slides li .caption {
   position: absolute;
-  top: 10%; 
+  top: 30%; 
   left: 30%;
   width: 70%;
+}
+
+.i_keboard_arrow_down{
+  font-size:100px;
+  color:#0c0a09
+}
+
+.keboard_arrow_down{
+  display:flex;
+  margin:auto;
+  
 }
