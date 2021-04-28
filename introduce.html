@@ -23,26 +23,26 @@
       <li class='photo_style'>
       <img   src="img/photo/profile_sun.png" alt="">
       <div class="caption left-align grey-text text-darken-4 ">
-        <h3>Looking for aLooking for aLooking for aLooking for a</h3>
-        <h3> front-enginner?</h3>
-        <h5>contact with me</h5>
-      </div>
+        <h3 id="divpong">Looking for a</h3>
+        <h3 id="divTyping"></h3>
+        <!-- <h5>contact with me</h5> -->
+      </div>  
       </li>
-        <li >
+        <!-- <li >
       <img src="img/photo/head_park.jpg" alt="" >
-      <div class="caption right-align grey-text text-darken-4">
+      <div class="caption left-align grey-text text-darken-4">
         <h3>Enjoy Challenges</h3>
         <h5>happy coding</h5>
       </div>
-        </li>
+        </li> -->
     </ul>
   </div>
     <!--nav-->
 <nav >
     <div class="container">
-    <a href="#" class="brand-logo black-text left">Howard</a>
+    <!-- <a href="#" class="brand-logo black-text left">Howard</a> -->
     <a href="#" class="sidenav-trigger show-on-medium-and-up right " data-target='mobile-id'>
-    <i class="material-icons right white-text ">menu</i>
+    <i class="material-icons right black-text ">menu</i>
     </a>
     </div>
     </nav>
@@ -262,35 +262,68 @@
 <div class="container center">
 	<h2>Recent project</h2>
   <div class="row">
-      <div class="col s12 l6">
-        <h5 class='project_title'>五子棋</h5>
-        <p> React 實作五子棋小遊戲，
-        </p>
+    <div class="col s12 l6">
+      <h5 class='project_title'>OpenAlign</h5>
+      <p> 負責 使用 React Redux 等前端主流框架 來進行公司主要產品開發</p>
+    <p>      
+      我們的公司商品的開發願景 是想要開發出新型態的溝通方式,專門針對 
+      以往因為工地建案,因溝通效率不佳,,或是工地交辦問題不夠迅速,導致工期延宕,導致人事成本，工程的總開銷的提高等等 可以藉由軟體做優化的問題，都是我們公司想要解決的
+      其中一項主要功能是　藍圖的編輯功能       
+      能夠無紙化藍圖，讓藍圖線上編輯，並且在三平台上都可以做編輯標籤，讓開發團隊可以即時的看到最新版本的藍圖，並且能夠及時的編輯新增修改藍圖標籤
+    </p>
+         
+    </div>
+    <div class="col s12 l6">
+    <div class="card grey darken-4">
+      <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="img/project/gobang.png">
       </div>
-      <div class="col s12 l6">
-      <div class="card grey darken-4">
-        <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="img/project/gobang.png">
-        </div>
-        <div class="card-content">
-        <span class="card-title activator grey-text text-darken-4">五子棋<i class="material-icons right">more_vert</i></span>
-        <p><a href="http://howtofun.tw/Gobang/build/" target="_blank">This is a link</a></p>
-        </div>
-        <div class="card-reveal grey darken-3">
-        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-		        <p>主要功能:
-        利用 棋盤與 棋子 css 分開的寫法 讓棋子能夠準確落在線上  
-        且能夠判讀勝負，紀錄棋盤的歷史紀錄,並能夠重新再來一場比賽 </p>
-        <p>使用 react 完成</p>
-        <p>分開描繪出棋盤 棋子css</p>
-        <p>React state 狀態提升</p>
-        <p>利用 state 記錄歷史紀錄</p>
+      <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">OpenAlign<i class="material-icons right">more_vert</i></span>
+      <p><a href="http://testweb.openalign.com/login" target="_blank">This is a link</a></p>
       </div>
-      </div>  
-      </div>
-      
-  </div>
+      <div class="card-reveal grey darken-3">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+          <p>使用前端主流框界 React /  Redux  / RXJS </p>
+      <!-- <p>使用 react 完成</p>
+      <p>分開描繪出棋盤 棋子css</p>
+      <p>React state 狀態提升</p>
+      <p>利用 state 記錄歷史紀錄</p> -->
+    </div>
+    </div>  
+    </div>
+    
+</div>
 
+<!-- <div class="row">
+  <div class="col s12 l6">
+    <h5 class='project_title'>五子棋</h5>
+    <p> React 實作五子棋小遊戲，
+    </p>
+  </div>
+  <div class="col s12 l6">
+  <div class="card grey darken-4">
+    <div class="card-image waves-effect waves-block waves-light">
+    <img class="activator" src="img/project/gobang.png">
+    </div>
+    <div class="card-content">
+    <span class="card-title activator grey-text text-darken-4">五子棋<i class="material-icons right">more_vert</i></span>
+    <p><a href="http://howtofun.tw/Gobang/build/" target="_blank">This is a link</a></p>
+    </div>
+    <div class="card-reveal grey darken-3">
+    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+        <p>主要功能:
+    利用 棋盤與 棋子 css 分開的寫法 讓棋子能夠準確落在線上  
+    且能夠判讀勝負，紀錄棋盤的歷史紀錄,並能夠重新再來一場比賽 </p>
+    <p>使用 react 完成</p>
+    <p>分開描繪出棋盤 棋子css</p>
+    <p>React state 狀態提升</p>
+    <p>利用 state 記錄歷史紀錄</p>
+  </div>
+  </div>  
+  </div>
+  
+</div> -->
 <!--Othercards-->      
   <div class="row">
       <div class="col s12 l6">
@@ -299,28 +332,29 @@
         <img class="activator" src="img/project/php_blog.png">
         </div>
         <div class="card-content">
-        <span class="card-title activator grey-text text-darken-4">簡易留言板<i class="material-icons right">more_vert</i></span>
-        <p><a href="http://howtofun.tw/mentor-program-3rd-HOWARD1021/homeworks/week13/hw3/index.php" target="_blank">This is a link</a></p>
+        <span class="card-title activator grey-text text-darken-4">官方網站<i class="material-icons right">more_vert</i></span>
+        <p><a href="https://www.openalign.com/" target="_blank">This is a link</a></p>
         </div>
         <div class="card-reveal grey darken-3">
         <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-        <p>Mysql 建立之料庫</p>
+        <!-- <p>Mysql 建立之料庫</p>
         <p>預防資安危險</p>
         <p>RWD</p>
         <p>bootstrap</p>
         <p>CRUD</p>
-                <p>可以註冊會員 / 登入 / 留言 / 回覆留言 / 編輯留言 / 刪除留言 / 分頁 / 紀錄登入狀況 / 密碼安全性(雜湊) / 防止SQL Injection等hack / 套bootstrap樣式 / RWD不會跑位</p>
+                <p>可以註冊會員 / 登入 / 留言 / 回覆留言 / 編輯留言 / 刪除留言 / 分頁 / 紀錄登入狀況 / 密碼安全性(雜湊) / 防止SQL Injection等hack / 套bootstrap樣式 / RWD不會跑位</p> -->
       </div>
       </div>  
       </div>
       <div class="col s12 l6">
-        <h5  class='project_title'>簡易留言板</h5>
-                <p>使用 php,建立網站</p>
+        <h5  class='project_title'>公司官方網站</h5>
+                <p>- 負責公司官方網站維護與開發
+                </p>
         </h6>
       </div>
   </div>  
 <!--Othercards-->      
-  <div class="row">
+  <!-- <div class="row">
      <div class="col s12 l6">
         <h5  class='project_title'>TodoList</h5>
      </div>
@@ -331,7 +365,7 @@
         </div>
         <div class="card-content">
         <span class="card-title activator grey-text text-darken-4">street<i class="material-icons right">more_vert</i></span>
-        <p><a href="http://howtofun.tw/Todolist/build/" target="_blank">This is a link</a></p>
+        <p><a href="https://howard1021.github.io/hello-react/" target="_blank">This is a link</a></p>
         </div>
         <div class="card-reveal grey darken-3">
         <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
@@ -351,9 +385,9 @@
         </div>  
         </div>
     
-  </div>  
+  </div>   -->
 <!--Othercards Blog-->        
-  <div class="row">
+  <!-- <div class="row">
       <div class="col s12 l6">
       <div class="card  grey darken-4">
         <div class="card-image  waves-effect waves-block waves-light">
@@ -378,7 +412,7 @@
       </div>
   </div>  
 
-</div>
+</div> -->
 </section>
 
   <!-- parallax -->
@@ -389,10 +423,10 @@
 </div>
 
   <!-- contact form -->
-  <section class=" container section  scrollspy" id ='contact'>
+  <!-- <section class=" container section  scrollspy" id ='contact'>
     <div class="row">
       <div class="col s12 l5">
-        <h4 class='indigo-text text-darken-4'>Contact with Howard</h4>
+        <h4 class='indigo-text text-darken-4'>Contact with Me</h4>
       <p>
       歡迎與我聯繫
       </p> 
@@ -437,14 +471,20 @@
       </div>
     </div>
 
-  </section>
+  </section> -->
 
   <!-- footer -->
 <footer class='page_footer grey darken-4 white-text'>
   <div class="container">
     <div class="row">      
-    <div class="col s12  center">
+    <div class="col s12  left">
       <div id="footer-logo">
+       <h5>
+         Get in contact with me!
+       </h5>
+      <p>Call Me: 0908-029-327</p>
+      <p>Email Me: ms04626730@gmail.com
+      </p>
       <p>Learn more about Howard</p>
       <div id="footer-links">
         <a href="https://www.facebook.com/profile.php?id=100002596313907" class='grey-text text-lighten-4' target='_blank'>
@@ -457,7 +497,7 @@
   </div>
     <div class="footer-copyright center">
       <div class="container">
-        &copy; 2020 howard Copyright
+        &copy; 2021 Howard Copyright
       </div>  
     </div>
 </footer>

@@ -36,3 +36,45 @@ function changenav(){
 window.addEventListener('scroll',()=>{
 	changenav()
 })
+
+
+var str = "Front-End Developer?";
+var str1 = "Contact with Me"
+var i = 0;
+var j = 0
+allarry = ["0","1","2"]
+function typing(func) {
+	
+	// for(let j= 0;j<allarry.length; j++ ){
+		  var divTyping = document.getElementById("divTyping");
+		// console.log(j)
+		if (i <= str.length) {
+			// str.slice(start, end) 切片函数，切取数组中的从start到end的字符串，不修改原数组
+	// start 参数必须要有，end 可以没有，默认数组最后一个
+	divTyping.innerHTML = str.slice(0, i++) + "_";
+	setTimeout("typing(()=>typing1())", 200); // 递归调用
+} else {
+	divTyping.innerHTML = str; // 结束打字，移除光标
+	func()
+}
+}
+function typing1() {
+	// for(let j= 0;j<allarry.length; j++ ){
+		  var divTyping = document.getElementById("divTyping");
+		  var divpong = document.getElementById("divpong");
+		  divpong.innerHTML =""	  
+		  // console.log(j)
+		if (j <= str1.length) {
+			// str1.slice(start, end) 切片函数，切取数组中的从start到end的字符串，不修改原数组
+	// start 参数必须要有，end 可以没有，默认数组最后一个
+	divTyping.innerHTML = str1.slice(0, j++) + "_";
+	setTimeout("typing1()", 200); // 递归调用
+} else {
+	divTyping.innerHTML = str1; // 结束打字，移除光标
+}
+}
+// }
+// 该函数实际上不是一个个输出，只是后面的长度多一的字符串覆盖前面的字符串
+typing(()=>typing1() );
+
+//typing1();
