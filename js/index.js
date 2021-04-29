@@ -38,22 +38,25 @@ window.addEventListener('scroll',()=>{
 })
 
 
-var str = "Front-End Developer?";
+var str = ["Front-End Developer?","Web Engineer?"];
 var str1 = " Web Engineer?"
 var i = 0;
 var j = 0
 function typing(func) {
-	
-	// for(let j= 0;j<allarry.length; j++ ){
+	console.log("Developer" ,j);
 		  var divTyping = document.getElementById("divTyping");
-		// console.log(j)
-		if (i <= str.length) {
+		if (j === 2 ||i <= str[j].length  ) {
+			console.log('j',j);			
+			if (j == 2) j =0
 			// str.slice(start, end) 切片函数，切取数组中的从start到end的字符串，不修改原数组
 	// start 参数必须要有，end 可以没有，默认数组最后一个
-	divTyping.innerHTML = str.slice(0, i++) + "_";
-	setTimeout("typing(()=>typing1())", 200); // 递归调用
+	divTyping.innerHTML = str[j].slice(0, i++) + "_";
+	setTimeout("typing(()=>typing())", 200); // 递归调用
 } else {
-	divTyping.innerHTML = str; // 结束打字，移除光标
+	// divTyping.innerHTML = str
+	 // 结束打字，移除光标
+	i = 0
+	j++
 	func()
 }
 }
@@ -73,6 +76,7 @@ function typing1() {
 }
 // }
 // 该函数实际上不是一个个输出，只是后面的长度多一的字符串覆盖前面的字符串
-typing(()=>typing1() );
+		typing(()=>typing() );
 
+	
 //typing1();
