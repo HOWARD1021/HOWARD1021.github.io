@@ -43,12 +43,10 @@ var str1 = " Web Engineer?"
 var i = 0;
 var j = 0
 function typing(func) {
-	console.log("Developer" ,j);
-		  var divTyping = document.getElementById("divTyping");
+		var divTyping = document.getElementById("divTyping");
 		if (j === 2 ||i <= str[j].length  ) {
-			console.log('j',j);			
 			if (j == 2) j =0
-			// str.slice(start, end) 切片函数，切取数组中的从start到end的字符串，不修改原数组
+	// str.slice(start, end) 切片函数，切取数组中的从start到end的字符串，不修改原数组
 	// start 参数必须要有，end 可以没有，默认数组最后一个
 	divTyping.innerHTML = str[j].slice(0, i++) + "_";
 	setTimeout("typing(()=>typing())", 200); // 递归调用
