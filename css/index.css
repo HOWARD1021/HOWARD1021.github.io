@@ -185,8 +185,16 @@ background-color: rgba(0, 0, 0, .7);
 .project_title{
   display:flex;
   align-content:center;
-  justify-content:center;
+  justify-content:left;
 }
+
+.project_content{
+  text-align: left;
+}
+.project_content li{
+margin: 2rem 0rem;
+}
+
 
 .Project{
   font-size: 4.2rem;
