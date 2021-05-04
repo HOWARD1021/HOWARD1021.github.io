@@ -243,6 +243,21 @@ margin: 2rem 0rem;
 .color_blue{
  color:#00e6f6
 }
+.arrow{
+  position: absolute;
+    bottom: 6%;
+    left: 45%;
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    transform:translate(-50%, -50%);
+}
+
+video{
+  width: 100%;
+  margin: 5rem 1rem;
+}
+
 
 #divpong, #divpong::after{
   font-family: 'PT Sans', sans-serif;
@@ -259,10 +274,8 @@ margin: 2rem 0rem;
   position:relative;
     margin: 1rem 23rem;
 }
-video{
-  width: 100%;
-  margin: 5rem 1rem;
-}
+
+
 
 #divpong::after {
   --slice-0:inset(50% 50%  50% 50%);
