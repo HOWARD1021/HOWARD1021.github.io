@@ -7,7 +7,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background-color: #0c0a09;
+    background-color: #212121;
   }
 
 header {
@@ -187,6 +187,8 @@ background-color: rgba(0, 0, 0, .7);
   display:flex;
   align-content:center;
   justify-content:left;
+  color:white;
+
 }
 
 .project_content{
@@ -203,7 +205,8 @@ margin: 2rem 0rem;
   margin: 2.8rem 0 1.68rem 0;
 }
 .slider_title{
-  display:flex
+  color:white;
+  display:flex;
 }
 
 .slider .slides li img {
@@ -219,7 +222,7 @@ margin: 2rem 0rem;
 } 
 
 .slider .slides {
-  background-color: #fff;
+  background-color: #212121;  
   margin: 0;
 }
 
