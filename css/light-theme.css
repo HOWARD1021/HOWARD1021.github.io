@@ -386,7 +386,8 @@ video{
 .fa-moon{
   color: #f1c40f;
   margin-right: 2px;
+  font-weight: 100;
 }
 .fa-sun{
-  color:#f39c12
+  color:#f39c12;
 }
