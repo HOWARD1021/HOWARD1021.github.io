@@ -31,12 +31,14 @@
         <li class='photo_style'>
           <img src="" alt="">
           <div class="caption left-align grey-text text-darken-4 ">
-            <h2 class="slider_title"> Hello! 👋🏼 I`m &nbsp<div class="color_blue"> Howard.</div>
-            </h2>
-            <div class="slider_title">
-              <h2>Looking for a &nbsp</h2>
-              <h2 id="divTyping"></h2>
+            <div class="slider_title"> Hello! 👋🏼 I`m &nbsp<div class="color_blue"> Howard.</div>
             </div>
+            <div class="slider_title">
+              <div>Looking for a &nbsp</div>
+            </div>
+            <div class="slider_title">
+            <div id="divTyping"></div>
+          </div>
             <button id="divpong">Contact with Me </button>
             <!-- <a href="https://www.facebook.com/profile.php?id=100002596313907" class='grey-text text-lighten-4' target='_blank'>
           <i class="fab fa-facebook-f fa-2x"></i></a>      
@@ -58,11 +60,17 @@
     <nav>
       <div class="container">
         <a href="#" class="brand-logo  left">Howard</a>
-        <a href="#" class="sidenav-trigger show-on-medium-and-up right " data-target='mobile-id'>
-          <i class="material-icons right black-text ">menu</i>
+        <ul class="right hide-on-med-and-down navbar-name">
+          <li><a href="#home">home</a></li>
+          <li><a href="#project">project</a></li>
+          <li><a href="#about_me">about me</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+        <a href="#" class="sidenav-trigger .show-on-small	 right " data-target='mobile-id'>
+          <i class="material-icons right black-text ">menu</i>        
         </a>
       </div>
-      <div class="right"><input type="checkbox" class="btn-toggle" id="checkbox">
+      <div class="trigger-checkbox"><input type="checkbox" class="btn-toggle" id="checkbox">
         <label for="checkbox" class="label">
           <i class="fas fa-moon"></i>
           <i class="fas fa-sun"></i>
