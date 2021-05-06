@@ -34,12 +34,16 @@ header {
   .slider .slides li .caption {
   position: absolute;
   top: 42%;
-  left: 15%;
-  width: 70%;
+  left: 10%;
+  width: 80%;
   font-size: 2rem;
   display: flex;
   flex-direction: column;
+  flex-direction: column;
   align-items: center;
+}
+  #divpong{
+    visibility: hidden;
   }
 }
 
