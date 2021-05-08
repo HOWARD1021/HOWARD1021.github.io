@@ -58,27 +58,8 @@ function typing(func) {
 	func()
 }
 }
-function typing1() {
-	// for(let j= 0;j<allarry.length; j++ ){
-		  var divpong = document.getElementById("divTyping");
-		//   divpong.innerHTML =""	  
-		  // console.log(j)
-		if (j <= str1.length) {
-			// str1.slice(start, end) 切片函数，切取数组中的从start到end的字符串，不修改原数组
-	// start 参数必须要有，end 可以没有，默认数组最后一个
-	divpong.innerHTML = str1.slice(0, j++) + "_";
-	setTimeout("typing1()", 200); // 递归调用
-} else {
-	divpong.innerHTML = str1; // 结束打字，移除光标
-}
-}
-// }
-// 该函数实际上不是一个个输出，只是后面的长度多一的字符串覆盖前面的字符串
-		typing(()=>typing() );
 
-	
-//typing1();
-
+typing(()=>typing() );
 const btn = document.querySelector(".btn-toggle");
 // Select the stylesheet <link>
 const theme = document.querySelector("#theme-link");
@@ -97,29 +78,36 @@ btn.addEventListener("click", function() {
 });
 
 
+
 function onYouTubeIframeAPIReady() {
 	var player;
-	player = new YT.Player('YouTubeVideoPlayerAPI', {
-	  videoId: 'WuAMLwrYu68',   // YouTube 影片ID
-	  width: '390',            // 播放器寬度 (px)
-	  height: '390',           // 播放器高度 (px)
-	  playerVars: {
-		autoplay: 1,            // 自動播放影片
-		controls: 0,            // 顯示播放器
-		showinfo: 0,            // 隱藏影片標題
-		modestbranding: 0,      // 隱藏YouTube Logo
-		loop: 1,                // 重覆播放
-		playlist:'WuAMLwrYu68', // 當使用影片要重覆播放時，需再輸入YouTube 影片ID
-		fs: 0,                  // 隱藏全螢幕按鈕
-		cc_load_policty: 0,     // 隱藏字幕
-		iv_load_policy: 3,      // 隱藏影片註解
-		autohide: 0             // 影片播放時，隱藏影片控制列
-	  },
-	  events: {
-		onReady: function(e) {
-		  e.target.mute();      //播放時靜音
-		  e.target.playVideo(); //強制播放(手機才會自動播放，但僅限於Android)
-		}
-	  }
-	});
-   }
+	var htmlID = ["YouTubeVideoPlayerAPI" ,"YouTubeVideoPlayerAPItwo"];
+	var youAPIID = ["WuAMLwrYu68","4ZniwaoQYig"];
+	for(let i = 0; i<htmlID.length;i++){
+		player = new YT.Player(htmlID[i], {
+			videoId: youAPIID[i],   // YouTube 影片ID
+			width: '390',            // 播放器寬度 (px)
+			height: '390',           // 播放器高度 (px)
+			playerVars: {
+			  autoplay: 1,            // 自動播放影
+			  showinfo: 0,            // 隱藏影片標題
+			  modestbranding: 0,      // 隱藏YouTube Logo
+			  loop: 1,                // 重覆播放
+			  playlist:youAPIID[i], // 當使用影片要重覆播放時，需再輸入YouTube 影片ID
+			  fs: 0,                  // 隱藏全螢幕按鈕
+			  cc_load_policty: 0,     // 隱藏字幕
+			  iv_load_policy: 3,      // 隱藏影片註解
+			  autohide: 0             // 影片播放時，隱藏影片控制列
+			},
+			events: {
+			  onReady: function(e) {
+				e.target.mute();      //播放時靜音
+				e.target.playVideo(); //強制播放(手機才會自動播放，但僅限於Android)
+			  }
+			}
+		  });
+	}	
+}
+
+
+
